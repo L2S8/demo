@@ -33,9 +33,12 @@
         </tbody>
     </table>
 
-    <p th:if="${posts.size() == 0}">
+    <a th:href="@{/admin/post/create}">Add New Post</a>
+    <br/><br/>
+
+    <div th:if="${posts.size() == 0}">
     <div class="alert alert-warning" role="alert">No Posts Found.</div>
-    </p>
+    </div>
 
 </div>
 
